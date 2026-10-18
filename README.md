@@ -9,6 +9,7 @@ This project demonstrates three different approaches to building conversational 
 1. **AI-Powered Chatbot** - Machine learning-based responses using Naive Bayes classification
 2. **Rule-Based Chatbot** - Pattern matching using NLTK's Chat utility
 3. **Basic Chatbot** - Simple keyword-based responses
+4. **Learning Roadmap Chatbot** - Rule-based chatbot using the Gradio platform
 
 The application processes user input through text preprocessing (tokenization, lemmatization, punctuation removal) before generating responses.
 
@@ -16,12 +17,13 @@ The application processes user input through text preprocessing (tokenization, l
 
 ```
 chat-bot/
-├── main.py                 # Main application entry point
-├── preprocessing.py        # Text preprocessing module
-├── ai_chatbot.py          # ML-powered chatbot implementation
-├── rule_patterns.py       # Rule-based chatbot and patterns
-├── requirements.txt       # Project dependencies
-└── README.md             # This file
+├── main.py                                 # Main application entry point
+├── preprocessing.py                        # Text preprocessing module
+├── ai_chatbot.py                           # ML-powered chatbot implementation
+├── rule_patterns.py                        # Rule-based chatbot and patterns
+├── learning_roadmap_chatbot.ipynb          # Chatbot using Gradio.app
+├── requirements.txt                        # Project dependencies
+└── README.md                               # This file
 ```
 
 ### File Descriptions
@@ -30,6 +32,7 @@ chat-bot/
 - **preprocessing.py**: Handles text preprocessing including tokenization, lemmatization, and stopword removal
 - **ai_chatbot.py**: Implements the machine learning chatbot using scikit-learn's Naive Bayes classifier
 - **rule_patterns.py**: Contains rule-based patterns for NLTK Chat and basic keyword matching logic
+- **learning_roadmap_chatbot.ipynb**: Provides an offline Gradio chatbot that generates step-by-step learning roadmaps using keyword and fuzzy topic matching
 
 ## 🚀 Getting Started
 
@@ -61,6 +64,8 @@ Start the chatbot application:
 ```bash
 python main.py
 ```
+
+To run the learning roadmap chatbot, open `learning_roadmap_chatbot.ipynb` in Jupyter Notebook or VS Code and run all cells. The notebook installs Gradio and launches the interactive interface locally.
 
 The chatbot will prompt you with:
 ```
